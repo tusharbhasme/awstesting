@@ -19,8 +19,8 @@ public class Test {
                 .build();
 		ListTablesResult listTables = ddb.listTables();
 		ResponseMetadata sdkResponseMetadata = listTables.getSdkResponseMetadata();
-//		System.out.println(sdkResponseMetadata);
-//		System.out.println(listTables);
+		System.out.println(sdkResponseMetadata);
+		System.out.println(listTables);
 		
 		AmazonEC2 ec2 = AmazonEC2ClientBuilder.standard()
 				.withRegion(Regions.US_WEST_2)
